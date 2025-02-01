@@ -1,5 +1,5 @@
 {
-  "name": "@acme/auth-proxy",
+  "name": "@ars/auth-proxy",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,13 +10,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@auth/core": "0.37.2"
+    "@ars/db": "workspace:*",
+    "@auth/core": "0.37.2",
+    "bcrypt": "^5.1.1"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@ars/eslint-config": "workspace:*",
+    "@ars/prettier-config": "workspace:*",
+    "@ars/tailwind-config": "workspace:*",
+    "@ars/tsconfig": "workspace:*",
     "@types/node": "^22.10.10",
     "eslint": "catalog:",
     "h3": "^1.14.0",
@@ -24,5 +26,5 @@
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@ars/prettier-config"
 }

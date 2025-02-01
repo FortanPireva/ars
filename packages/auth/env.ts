@@ -2,6 +2,7 @@ import { createEnv } from "@t3-oss/env-core";
 import { z } from "zod";
 
 export const env = createEnv({
+  clientPrefix:"",
   server: {
     // AUTH_DISCORD_ID: z.string().min(1),
     // AUTH_DISCORD_SECRET: z.string().min(1),
@@ -20,7 +21,6 @@ export const env = createEnv({
     AUTH_GOOGLE_SECRET: process.env.AUTH_GOOGLE_SECRET,
   },
   client: {},
-  experimental__runtimeEnv: {},
   skipValidation:
     !!process.env.CI || process.env.npm_lifecycle_event === "lint",
 });

@@ -1,14 +1,16 @@
 {
-  "extends": "@acme/tsconfig/base.json",
+  "extends": "@ars/tsconfig/base.json",
   "compilerOptions": {
     "lib": ["ES2022", "dom", "dom.iterable"],
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@ars/*": ["../../packages/*/src"]
     },
     "plugins": [{ "name": "next" }],
-    "module": "esnext"
+    "module": "esnext",
+    "moduleResolution": "bundler"
   },
   "include": [".", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

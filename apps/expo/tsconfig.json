@@ -1,9 +1,10 @@
 {
-  "extends": ["@acme/tsconfig/base.json"],
+  "extends": ["@ars/tsconfig/base.json"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@ars/*": ["../../packages/*/src"]
     },
     "jsx": "react-native",
     "types": ["nativewind/types"],

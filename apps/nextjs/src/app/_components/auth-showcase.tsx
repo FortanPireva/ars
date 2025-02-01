@@ -1,5 +1,5 @@
-import { auth, signIn, signOut } from "@acme/auth";
-import { Button } from "@acme/ui/button";
+import { auth, signIn, signOut } from "@ars/auth";
+import { Button } from "@ars/ui/button";
 
 
 export async function AuthShowcase() {

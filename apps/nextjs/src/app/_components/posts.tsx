@@ -1,9 +1,9 @@
 "use client";
 
-import type { RouterOutputs } from "@acme/api";
-import { CreatePostSchema } from "@acme/db/schema";
-import { cn } from "@acme/ui";
-import { Button } from "@acme/ui/button";
+import type { RouterOutputs } from "@ars/api";
+import { CreatePostSchema } from "@ars/db/schema";
+import { cn } from "@ars/ui";
+import { Button } from "@ars/ui/button";
 import {
   Form,
   FormControl,
@@ -11,9 +11,9 @@ import {
   FormItem,
   FormMessage,
   useForm,
-} from "@acme/ui/form";
-import { Input } from "@acme/ui/input";
-import { toast } from "@acme/ui/toast";
+} from "@ars/ui/form";
+import { Input } from "@ars/ui/input";
+import { toast } from "@ars/ui/toast";
 
 import { api } from "~/trpc/react";
 
